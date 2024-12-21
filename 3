@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    float v, t, a, S;
+
+    cout << "введите скорость: ";
+    cin >> v;
+    cout << "введите время: ";
+    cin >> t;
+    cout << "введите ускорение: ";
+    cin >> a;
+
+    S = v * t + (a * t * t) / 2;
+
+    cout << "пройденное расстояние: " << S << " м" << endl;
+
+    return 0;
+}
