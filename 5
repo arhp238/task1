@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    double number;
+    
+    std::cout << "введите дробное число: ";
+    std::cin >> number;
+    
+    int dollars = static_cast<int>(number);
+    int cents = static_cast<int>((number - dollars) * 100);
+    
+    std::cout << "Результат: " << dollars << " долларов и " << cents << " центов" << std::endl;
+    
+    return 0;
+}
